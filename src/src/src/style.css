@@ -1,1 +1,184 @@
+* {
+  box-sizing: border-box;
+}
 
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fffaf3;
+  color: #3f3a38;
+}
+
+button {
+  font: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+.app {
+  min-height: 100vh;
+  padding-bottom: 85px;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 20px;
+  background: #fffaf3;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 22px;
+  font-weight: 800;
+  color: #d95f76;
+}
+
+.parent-button {
+  background: white;
+  border: 1px solid #eadfd7;
+  border-radius: 20px;
+  padding: 9px 13px;
+  color: #555;
+}
+
+main {
+  max-width: 900px;
+  margin: auto;
+  padding: 0 18px;
+}
+
+.welcome {
+  text-align: center;
+  padding: 32px 20px;
+  background: #ffe9e8;
+  border-radius: 28px;
+  margin-bottom: 28px;
+}
+
+.hello {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.welcome h1 {
+  margin: 8px 0;
+  font-size: 32px;
+}
+
+.welcome p {
+  font-size: 17px;
+}
+
+.primary-button {
+  margin-top: 15px;
+  background: #e96d83;
+  color: white;
+  padding: 14px 22px;
+  border-radius: 25px;
+  font-weight: 700;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.08);
+}
+
+.learning h2,
+.garden-preview h2 {
+  margin-bottom: 16px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.learning-card {
+  background: white;
+  border-radius: 22px;
+  padding: 20px 14px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+
+.learning-card .icon {
+  font-size: 42px;
+}
+
+.learning-card h3 {
+  margin: 10px 0 5px;
+}
+
+.learning-card p {
+  margin: 0 0 14px;
+  color: #777;
+  font-size: 14px;
+}
+
+.learning-card button {
+  background: #f6d76d;
+  color: #51472b;
+  padding: 9px 15px;
+  border-radius: 18px;
+  font-weight: 700;
+}
+
+.garden-preview {
+  margin-top: 28px;
+  background: #e8f5df;
+  border-radius: 26px;
+  padding: 22px;
+  text-align: center;
+}
+
+.garden-preview p {
+  color: #66705f;
+}
+
+.garden {
+  font-size: 42px;
+  margin: 14px 0;
+}
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 75px;
+  background: white;
+  border-top: 1px solid #eee4dd;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 10;
+}
+
+.bottom-nav button {
+  background: transparent;
+  color: #777;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  font-size: 21px;
+}
+
+.bottom-nav span {
+  font-size: 11px;
+}
+
+@media (max-width: 650px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .welcome h1 {
+    font-size: 27px;
+  }
+
+  .learning-card {
+    padding: 18px;
+  }
+  }
